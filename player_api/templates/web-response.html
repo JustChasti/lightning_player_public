@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Item Details</title>
+    <link href="static/style.css" rel="stylesheet">
+    <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body style="background-color:#030929">
+    <div class="container">
+        <div class="text-white">
+            <div class="row mt-3">
+                <p>{{message}}</p>
+            </div>
+        <div class="row mt-5">
+            <p class="mt-5"><a href="https://t.me/kot_gray"><img style="display: block; margin-left: auto; margin-right: auto;" src="{{ url_for('static', path='/lightning.jpg') }}" alt="Лого"></a></p>
+        </div>
+    </div>
+</body>
+</html>

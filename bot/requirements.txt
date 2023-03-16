@@ -1,0 +1,6 @@
+requests
+loguru
+pyTelegramBotApi
+aiogram
+BeautifulSoup4
+python-dotenv

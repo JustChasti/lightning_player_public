@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Item Details</title>
+    <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body style="background-color:#030929">
+    <div class="container">
+        <div class="text-white">
+            <div class="row mt-3">
+                <p>Чтобы я начал скачивать музыку заполни простую форму. Просто вставь ОДНУ ссылку в НУЖНОЕ поле. Вот примеры ссылок: https://vk.com/audios660665450 - ссылка на аудио страницы, чтобы ее получить зайди с веб версии вк в раздел "Музыка", а это уже ссылка на плейлист: https://vk.com/music/playlist/660665450_2, для этого нажми поделиться и скопируй ссылку с готового плейлиста. Как выглядит ссылка на видео youtube, думаю объяснять не нужно))) </p>
+            </div>
+            <form method="post">
+                <div class="row mt-3">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <label for="name">Введите ссылку на аудио страницы</label>
+                    </div>
+                    <input name="vk_profile" class="col-xs-8 col-sm-8 col-md-8 col-lg-8"/>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <label for="name">Введите ссылку на vk плейлист</label>
+                    </div>
+                    <input name="vk_playlist" class="col-xs-8 col-sm-8 col-md-8 col-lg-8"/>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <label for="name">Введите ссылку на youtube видео</label>
+                    </div>
+                    <input name="vk_youtube" class="col-xs-8 col-sm-8 col-md-8 col-lg-8"/>
+                </div>   
+                <div class="row mt-4">
+                    <input type="submit" value="Отправить" class="col-xs-3 col-sm-3 col-md-3 col-lg-3"  style="display: block; margin-left: auto; margin-right: auto;"/>
+                </div>
+            </form>
+        </div>
+        <div class="row mt-5">
+            <p class="mt-5"><a href="https://t.me/kot_gray"><img style="display: block; margin-left: auto; margin-right: auto;" src="{{ url_for('static', path='/lightning.jpg') }}" alt="Лого"></a></p>
+        </div>
+    </div>
+</body>
+</html>
